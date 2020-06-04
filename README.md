@@ -9,6 +9,15 @@ A simple finite-state machine that performs the following functions:
 
 ## Getting Started
 
+### Prerequisites
+
+```
+PHP 7.4.5
+Google Chrome (Release Date: 2020-05-19)
+```
+
+### Deployment
+
 Clone the project and run the following command in the parent directory:
 
 ```
@@ -21,16 +30,15 @@ Afterwards, open browser and enter at the address bar:
 http://localhost:8000
 ```
 
-### Prerequisites
-
-```
-PHP 7.4.5
-Google Chrome (Release Date: 2020-05-19)
-```
-
 ## Built With
 
 * [PHP](https://www.php.net/docs.php) - The programming language used
+
+## Screenshots
+
+![](img/main.png)
+
+![](img/dfaMin.png)
 
 ## Authors
 
