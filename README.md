@@ -36,7 +36,11 @@ http://localhost:8000
 
 ## Screenshots
 
+Start screen:
+
 ![](img/main.png)
+
+Example of output for DFA minimization function:
 
 ![](img/dfaMin.png)
 
