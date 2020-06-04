@@ -1,0 +1,109 @@
+body {
+  font-family: arial, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 8px;
+  width: 50px;
+  height: 20px;
+}
+
+td {
+  background-color: #eef0eb;
+}
+
+th {
+  background-color: #ffd23f;
+}
+
+input {
+  text-align: center;
+}
+
+#states {
+  background-color: #a7af9c;
+  font-weight: bold;
+  width: 60px;
+}
+
+#leftbox {
+  float: left;
+  width: auto;
+}
+
+#middlebox {
+  float: left;
+  width: auto;
+  padding: 0px 40px 0px 40px;
+}
+
+#function {
+  width: 50px;
+}
+
+#navBar #holder ul {
+  list-style:none;
+  margin: 0;
+  padding: 0;
+}
+
+#navBar #holder ul li input {
+  font-family:"Arial Black", Gadget, sans-serif;
+  color:#000000;
+  display:block;
+  background:#69F;
+  padding:10px;
+  width:60px;
+}
+
+#navBar #holder ul li input:hover {
+  background:#F90;
+  color:#FFF;
+  text-shadow:1px 1px 1px #000;
+}
+
+#renderedInput {
+  width: 55px;
+}
+
+#newLabel {
+  background-color: #eef0eb;
+
+}
+
+#functions {
+padding-top: 258px;
+}
+
+#userInput {
+  width: 100%;
+  height: 50px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+#accepted {
+  background-color: #669966;
+  padding:10px;
+  color:#FFF;
+}
+
+#rejected {
+  background-color: #990033;
+  padding:10px;
+  color:#FFF;
+}
+
+#warning {
+  background-color: #FFCC00;
+  padding:10px;
+  color:#FFF;
+}

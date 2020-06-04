@@ -1,0 +1,53 @@
+
+<?php
+if ( isset ( $_POST['reset'] ) ) {
+  $_SESSION = array();
+}
+
+if (isset($_POST['submitNFA'])) {
+  $_SESSION['alpha'] = $_POST['alpha'];
+  $_SESSION['state'] = $_POST['states'];
+  $_SESSION['startState'] = $_POST['startState'];
+  $_SESSION['finalState'] = $_POST['finalState'];
+}
+?>
+
+<h4>Ɛ-NFA / NFA / DFA</h4>
+
+<form method="POST">
+  <table>
+      <tr>
+        <th>Σ</th>
+        <td><input type="text" name="alpha[]" size="1" value="<?php echo $_SESSION['alpha'][0] ?? '' ?>"></td>
+        <td><input type="text" name="alpha[]" size="1" value="<?php echo $_SESSION['alpha'][1] ?? '' ?>"></td>
+        <td><input type="text" name="alpha[]" size="1" value="<?php echo $_SESSION['alpha'][2] ?? '' ?>"></td>
+        <td>Ɛ</td>
+      </tr>
+      <tr>
+        <th>V</th>
+        <td><input type="text" name="states[]" size="1" value="<?php echo $_SESSION['state'][0] ?? '' ?>"></td>
+        <td><input type="text" name="states[]" size="1" value="<?php echo $_SESSION['state'][1] ?? '' ?>"></td>
+        <td><input type="text" name="states[]" size="1" value="<?php echo $_SESSION['state'][2] ?? '' ?>"></td>
+        <td><input type="text" name="states[]" size="1" value="<?php echo $_SESSION['state'][3] ?? '' ?>"></td>
+      </tr>
+      <tr>
+        <th>START</th>
+        <td><input type="text" name="startState" size="1" value="<?php echo $_SESSION['startState'] ?? '' ?>"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>FINAL</th>
+        <td><input type="text" name="finalState[]" size="1" value="<?php echo $_SESSION['finalState'][0] ?? '' ?>"></td>
+        <td><input type="text" name="finalState[]" size="1" value="<?php echo $_SESSION['finalState'][1] ?? '' ?>"></td>
+        <td><input type="text" name="finalState[]" size="1" value="<?php echo $_SESSION['finalState'][2] ?? '' ?>"></td>
+        <td><input type="text" name="finalState[]" size="1" value="<?php echo $_SESSION['finalState'][3] ?? '' ?>"></td>
+      </tr>
+    </table>
+
+    <p>
+      <input type="submit" name="submitNFA" value="Show transition table">
+      <input type="submit" name="reset" value="Reset table(s)">
+    </p>
+</form>
